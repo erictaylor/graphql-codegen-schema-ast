@@ -1,0 +1,39 @@
+{
+  "name": "@erictaylor/graphql-codegen-schema-ast",
+  "version": "1.0.0",
+  "description": "GraphQL Code Generator plugin for generating a .graphql file from given schema with more options.",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "repository": "git@github.com:erictaylor/graphql-codegen-schema-ast.git",
+  "author": "Eric Taylor <eric@daxos.com>",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@types/node": "^15.12.2",
+    "graphql": "^15.5.0",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "@graphql-codegen/plugin-helpers": "^1.18.7",
+    "@graphql-tools/utils": "^7.10.0",
+    "tslib": "^2.3.0"
+  },
+  "peerDependencies": {
+    "graphql": "^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0"
+  },
+  "scripts": {
+    "build": "yarn tsc",
+    "prepublish": "yarn build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "graphql-codegen",
+    "schema-ast",
+    "plugin",
+    "introspection"
+  ]
+}
