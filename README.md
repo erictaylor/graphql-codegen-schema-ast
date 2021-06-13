@@ -44,7 +44,7 @@ schema:
 generates:
   path/to/file.graphql:
     plugins:
-      - schema-ast
+      - "@erictaylor/graphql-codegen-schema-ast"
     config:
       includeDirectives: true
       includeIntrospection: true
